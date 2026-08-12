@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pricing - AskOnlineTutor Engineering</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#0058be",
+                    "on-background": "#191c1e",
+                    "on-surface-variant": "#45464d",
+                    "error": "#ba1a1a",
+                    "warning-caution": "#F59E0B",
+                    "tertiary": "#000000",
+                    "success-graph": "#10B981",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-surface": "#191c1e",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "on-primary-container": "#7c839b",
+                    "on-tertiary-container": "#98805d",
+                    "surface-dim": "#d8dadc",
+                    "border-technical": "#E2E8F0",
+                    "on-tertiary-fixed": "#271901",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#001a42",
+                    "secondary-fixed": "#d8e2ff",
+                    "surface-variant": "#e0e3e5",
+                    "surface-container-low": "#f2f4f6",
+                    "surface-subtle": "#F1F5F9",
+                    "outline-variant": "#c6c6cd",
+                    "background": "#f7f9fb",
+                    "surface": "#f7f9fb",
+                    "secondary-container": "#2170e4",
+                    "primary-fixed": "#dae2fd",
+                    "tertiary-container": "#271901",
+                    "on-secondary": "#ffffff",
+                    "primary": "#000000",
+                    "inverse-on-surface": "#eff1f3",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-primary": "#ffffff",
+                    "outline": "#76777d",
+                    "surface-tint": "#565e74",
+                    "on-secondary-container": "#fefcff",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#fcdeb5",
+                    "on-tertiary-fixed-variant": "#574425",
+                    "on-secondary-fixed-variant": "#004395",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#131b2e",
+                    "inverse-primary": "#bec6e0",
+                    "surface-container": "#eceef0",
+                    "inverse-surface": "#2d3133",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#dec29a",
+                    "surface-container-high": "#e6e8ea",
+                    "on-primary-fixed": "#131b2e",
+                    "surface-bright": "#f7f9fb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "unit": "4px",
+                    "max-width": "1280px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "code-technical": [
+                            "Geist"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "headline-xl": [
+                            "Geist"
+                    ],
+                    "label-sm": [
+                            "Geist"
+                    ],
+                    "headline-md": [
+                            "Geist"
+                    ],
+                    "headline-lg": [
+                            "Geist"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "code-technical": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-xl": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-sm": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.02em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .tech-grid {
+            background-image: 
+                linear-gradient(to right, #E2E8F0 1px, transparent 1px),
+                linear-gradient(to bottom, #E2E8F0 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col relative tech-grid">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest sticky top-0 w-full border-b border-border-technical z-50">
+<div class="flex justify-between items-center h-16 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">architecture</span>
+                AskOnlineTutor Engineering
+            </div>
+<div class="hidden md:flex gap-8">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Products</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Solutions</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Resources</a>
+<a class="text-secondary font-semibold border-b-2 border-secondary transition-colors duration-200 h-16 flex items-center" href="#">Pricing</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden md:block font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">Sign In</a>
+<button class="bg-secondary text-on-secondary font-label-sm text-label-sm px-4 py-2 rounded hover:bg-secondary-container transition-colors">Get Started</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow max-w-max-width w-full mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-20 relative z-10">
+<!-- Header -->
+<header class="text-center max-w-3xl mx-auto mb-16">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-6">Transparent Pricing for Every Engineer.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">From students mastering concepts to professionals solving complex structures, choose the plan that fits your workflow.</p>
+</header>
+<!-- Pricing Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+<!-- Tier 1: FREE -->
+<div class="bg-surface-container-lowest border border-border-technical rounded-lg p-8 flex flex-col hover:shadow-[0_2px_4px_rgba(15,23,42,0.05)] transition-shadow">
+<div class="mb-6">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Conceptual Learning</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-4">FREE</h2>
+<div class="flex items-baseline mt-2 mb-2">
+<span class="font-headline-xl text-headline-xl text-primary">$0</span>
+<span class="text-on-surface-variant ml-1">/mo</span>
+</div>
+</div>
+<hr class="border-border-technical mb-6"/>
+<ul class="flex-grow space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span class="text-on-surface-variant">Basic engineering tools</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span class="text-on-surface-variant">Limited to 3 active projects</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span class="text-on-surface-variant">Basic calculation steps</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span class="text-on-surface-variant">Community support</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span class="text-on-surface-variant">Standard web-only access</span>
+</li>
+</ul>
+<button class="w-full py-3 border border-border-technical text-primary font-label-sm text-label-sm rounded hover:bg-surface-subtle transition-colors mt-auto">Start Free</button>
+</div>
+<!-- Tier 2: PRO -->
+<div class="bg-surface-container-lowest border-2 border-secondary rounded-lg p-8 flex flex-col relative shadow-[0_4px_12px_rgba(0,88,190,0.1)]">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary text-on-secondary px-4 py-1 rounded-full font-label-sm text-label-sm">
+                    Most Popular
+                </div>
+<div class="mb-6">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary bg-secondary-fixed px-2 py-1 rounded">Professional Analysis</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-4">PRO</h2>
+<div class="flex items-baseline mt-2 mb-2">
+<span class="font-headline-xl text-headline-xl text-primary">$19</span>
+<span class="text-on-surface-variant ml-1">/mo</span>
+</div>
+<p class="font-code-technical text-code-technical text-on-surface-variant">billed annually</p>
+</div>
+<hr class="border-border-technical mb-6"/>
+<ul class="flex-grow space-y-4 mb-8">
+<li class="flex items-start gap-3 font-medium text-primary">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span>
+<span>Everything in Free</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span class="text-on-surface-variant">Unlimited projects</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span class="text-on-surface-variant">Advanced analysis (Deflection, M-theta)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span class="text-on-surface-variant">PDF Report Export</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span class="text-on-surface-variant">Cloud sync across devices</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span class="text-on-surface-variant">Priority email support</span>
+</li>
+</ul>
+<button class="w-full py-3 bg-secondary text-on-secondary font-label-sm text-label-sm rounded hover:bg-secondary-container transition-colors mt-auto">Upgrade to Pro</button>
+</div>
+<!-- Tier 3: ENGINEERING SUITE -->
+<div class="bg-surface-container-lowest border border-border-technical rounded-lg p-8 flex flex-col hover:shadow-[0_2px_4px_rgba(15,23,42,0.05)] transition-shadow">
+<div class="mb-6">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Full Ecosystem</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-4 break-words">ENGINEERING SUITE</h2>
+<div class="flex items-baseline mt-2 mb-2">
+<span class="font-headline-xl text-headline-xl text-primary">$49</span>
+<span class="text-on-surface-variant ml-1">/mo</span>
+</div>
+<p class="font-code-technical text-code-technical text-on-surface-variant">billed annually</p>
+</div>
+<hr class="border-border-technical mb-6"/>
+<ul class="flex-grow space-y-4 mb-8">
+<li class="flex items-start gap-3 font-medium text-primary">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span>
+<span>Everything in Pro</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span class="text-on-surface-variant">All engineering applications (Beam, Truss, Frame, Section Master)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span class="text-on-surface-variant">AI Engineering Solver access</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span class="text-on-surface-variant">Advanced matrix method solvers</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span class="text-on-surface-variant">Team collaboration tools</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span class="text-on-surface-variant">Dedicated support engineer</span>
+</li>
+</ul>
+<button class="w-full py-3 border border-border-technical text-primary font-label-sm text-label-sm rounded hover:bg-surface-subtle transition-colors mt-auto">Contact Sales</button>
+</div>
+</div>
+<!-- Plan Comparison Table -->
+<div class="bg-surface-container-lowest border border-border-technical rounded-lg overflow-hidden mt-16">
+<div class="p-8 border-b border-border-technical">
+<h3 class="font-headline-md text-headline-md text-primary">Technical Plan Comparison</h3>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-subtle">
+<th class="p-4 border-b border-border-technical font-label-sm text-label-sm text-on-surface-variant">Feature</th>
+<th class="p-4 border-b border-border-technical font-label-sm text-label-sm text-primary w-1/4">FREE</th>
+<th class="p-4 border-b border-border-technical font-label-sm text-label-sm text-primary w-1/4 bg-secondary-fixed/30">PRO</th>
+<th class="p-4 border-b border-border-technical font-label-sm text-label-sm text-primary w-1/4">SUITE</th>
+</tr>
+</thead>
+<tbody class="font-code-technical text-code-technical">
+<tr>
+<td class="p-4 border-b border-border-technical text-on-surface-variant">Matrix Analysis Support</td>
+<td class="p-4 border-b border-border-technical text-on-surface-variant"><span class="material-symbols-outlined text-outline">remove</span></td>
+<td class="p-4 border-b border-border-technical text-on-surface-variant bg-secondary-fixed/10"><span class="material-symbols-outlined text-secondary">check</span></td>
+<td class="p-4 border-b border-border-technical text-on-surface-variant"><span class="material-symbols-outlined text-secondary">check</span></td>
+</tr>
+<tr>
+<td class="p-4 border-b border-border-technical text-on-surface-variant">Custom Unit Systems</td>
+<td class="p-4 border-b border-border-technical text-on-surface-variant"><span class="material-symbols-outlined text-outline">remove</span></td>
+<td class="p-4 border-b border-border-technical text-on-surface-variant bg-secondary-fixed/10"><span class="material-symbols-outlined text-secondary">check</span></td>
+<td class="p-4 border-b border-border-technical text-on-surface-variant"><span class="material-symbols-outlined text-secondary">check</span></td>
+</tr>
+<tr>
+<td class="p-4 border-b border-border-technical text-on-surface-variant">Step-by-step Export</td>
+<td class="p-4 border-b border-border-technical text-on-surface-variant">Basic</td>
+<td class="p-4 border-b border-border-technical text-on-surface-variant bg-secondary-fixed/10">Full PDF</td>
+<td class="p-4 border-b border-border-technical text-on-surface-variant">Full PDF + CAD</td>
+</tr>
+<tr>
+<td class="p-4 border-b border-border-technical text-on-surface-variant">API Access</td>
+<td class="p-4 border-b border-border-technical text-on-surface-variant"><span class="material-symbols-outlined text-outline">remove</span></td>
+<td class="p-4 border-b border-border-technical text-on-surface-variant bg-secondary-fixed/10"><span class="material-symbols-outlined text-outline">remove</span></td>
+<td class="p-4 border-b border-border-technical text-on-surface-variant"><span class="material-symbols-outlined text-secondary">check</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low w-full py-12 border-t border-border-technical z-10 mt-auto">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="col-span-2 md:col-span-1 mb-8 md:mb-0">
+<div class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">architecture</span>
+                    AskOnlineTutor
+                </div>
+<p class="font-code-technical text-code-technical text-on-surface-variant">
+                    © 2024 AskOnlineTutor Engineering.<br/>All rights reserved.<br/>Engineering standard precision.
+                </p>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-primary mb-4">Products</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Products</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Beam Calculator</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Frame Solver</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-primary mb-4">Company</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Company</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Resources</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-primary mb-4">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Legal</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

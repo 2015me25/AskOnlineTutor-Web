@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beam Master | ASK ONLINE TUTOR: Engineering</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#271901",
+                        "inverse-surface": "#2d3133",
+                        "on-surface-variant": "#45464d",
+                        "on-secondary-fixed-variant": "#004395",
+                        "outline": "#76777d",
+                        "on-secondary-container": "#fefcff",
+                        "tertiary-fixed": "#fcdeb5",
+                        "primary": "#000000",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "outline-variant": "#c6c6cd",
+                        "secondary-container": "#2170e4",
+                        "surface": "#f7f9fb",
+                        "inverse-on-surface": "#eff1f3",
+                        "secondary": "#0058be",
+                        "surface-container-high": "#e6e8ea",
+                        "border-technical": "#E2E8F0",
+                        "tertiary-fixed-dim": "#dec29a",
+                        "warning-caution": "#F59E0B",
+                        "on-tertiary-container": "#98805d",
+                        "surface-subtle": "#F1F5F9",
+                        "on-background": "#191c1e",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#bec6e0",
+                        "primary-container": "#131b2e",
+                        "surface-bright": "#f7f9fb",
+                        "tertiary-container": "#271901",
+                        "surface-container": "#eceef0",
+                        "surface-tint": "#565e74",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-primary-fixed": "#131b2e",
+                        "background": "#f7f9fb",
+                        "tertiary": "#000000",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#191c1e",
+                        "on-primary-container": "#7c839b",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#bec6e0",
+                        "surface-variant": "#e0e3e5",
+                        "success-graph": "#10B981",
+                        "on-tertiary-fixed-variant": "#574425",
+                        "surface-dim": "#d8dadc",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#d8e2ff",
+                        "surface-container-low": "#f2f4f6",
+                        "primary-fixed": "#dae2fd",
+                        "on-secondary-fixed": "#001a42"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "max-width": "1280px",
+                        "margin-mobile": "16px",
+                        "unit": "4px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Geist"],
+                        "body-md": ["Inter"],
+                        "code-technical": ["Geist"],
+                        "label-sm": ["Geist"],
+                        "headline-md": ["Geist"],
+                        "headline-xl": ["Geist"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "code-technical": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .grid-bg {
+            background-size: 24px 24px;
+            background-image:
+                linear-gradient(to right, #E2E8F0 1px, transparent 1px),
+                linear-gradient(to bottom, #E2E8F0 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface border-b border-technical bg-surface/95 backdrop-blur-sm docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-gutter max-w-max-width mx-auto h-20">
+<div class="flex items-center gap-8">
+<a class="text-headline-md font-headline-md font-bold tracking-tight text-primary" href="#">ASK ONLINE TUTOR: Engineering</a>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-secondary border-b-2 border-secondary pb-1 text-label-sm font-label-sm hover:text-secondary transition-colors duration-200" href="#">Products</a>
+<a class="text-on-surface-variant text-label-sm font-label-sm hover:text-secondary transition-colors duration-200" href="#">Solutions</a>
+<a class="text-on-surface-variant text-label-sm font-label-sm hover:text-secondary transition-colors duration-200" href="#">Resources</a>
+<a class="text-on-surface-variant text-label-sm font-label-sm hover:text-secondary transition-colors duration-200" href="#">Pricing</a>
+<a class="text-on-surface-variant text-label-sm font-label-sm hover:text-secondary transition-colors duration-200" href="#">About</a>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-4">
+<a class="text-secondary text-label-sm font-label-sm hover:text-primary transition-colors" href="#">Sign In</a>
+<a class="bg-secondary text-on-secondary px-4 py-2 rounded font-label-sm text-label-sm hover:bg-on-secondary-fixed-variant transition-colors" href="#">Get Started</a>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="pt-24 pb-16 px-gutter max-w-max-width mx-auto relative overflow-hidden">
+<div class="grid md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container rounded-full border border-technical mb-6">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Beam Master</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-6 leading-tight">Structural Beam Analysis.<br/>Visualized.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Precision-engineered software for resolving shear forces, bending moments, and deflections. Designed for clarity, speed, and deep educational understanding.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-secondary text-on-secondary px-6 py-3 rounded font-label-sm text-label-sm hover:bg-on-secondary-fixed-variant transition-colors shadow-sm inline-flex items-center gap-2" href="https://app.askonlinetutor.com/beam">
+                            Open Beam Master
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="border border-technical text-primary px-6 py-3 rounded font-label-sm text-label-sm hover:bg-surface-container transition-colors inline-flex items-center gap-2" href="#features">
+                            Explore Features
+                        </a>
+</div>
+</div>
+<div class="md:col-span-7 relative">
+<div class="bg-surface rounded-xl border border-technical p-2 shadow-sm relative z-10">
+<div class="bg-surface-container-low rounded border border-technical overflow-hidden aspect-video relative flex items-center justify-center">
+<img alt="Beam Master interface showing detailed SFD and BMD diagrams with calculation steps." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVHNWDjfoL1wLtxbBrBZaVGqQu8VP6rWzKByYh7LkuKEuhMUnht6Jdk6VPdbcMC98vedGLjayWGhDqLC1OEVOXhUwS4nENHdHJEJyyF7cFsdjrtiEp5jMdoIjO33m-n6TVy4IeWN9fGpbX-IRTsCi3Na5-HOuUd7csTcLxLuMer3KwXHKriDK_5iTkRc4B6ZHVBAHOJLFuiir0XHrOX3XxWl6iz4ZHDKbgiMnOTrkgWvsh-QRWqtzQ"/>
+</div>
+</div>
+<!-- Decorative Grid Behind Image -->
+<div class="absolute inset-0 grid-bg opacity-40 -z-10 translate-x-8 translate-y-8 rounded-xl border border-technical"></div>
+</div>
+</div>
+</section>
+<!-- Technical Workflow Section -->
+<section class="py-16 bg-surface-subtle border-y border-technical">
+<div class="max-w-max-width mx-auto px-gutter">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Integrated Engineering Ecosystem</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                        Seamlessly flow data from cross-section analysis to full beam simulation.
+                    </p>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-4xl mx-auto relative">
+<!-- Section Master Node -->
+<div class="bg-surface border border-technical rounded-lg p-6 w-full md:w-1/3 text-center shadow-sm relative z-10">
+<div class="w-12 h-12 bg-surface-container rounded-full mx-auto mb-4 flex items-center justify-center border border-technical">
+<span class="material-symbols-outlined text-secondary">grid_view</span>
+</div>
+<h3 class="font-label-sm text-label-sm font-bold text-primary mb-2">Section Master</h3>
+<p class="font-code-technical text-code-technical text-on-surface-variant text-xs">Calculate Area, Ix, Iy</p>
+</div>
+<!-- Connection Line (Desktop) -->
+<div class="hidden md:block w-32 h-px bg-secondary relative z-0">
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-secondary"></div>
+<div class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-full pb-2">
+<span class="font-code-technical text-code-technical text-xs text-secondary bg-surface-subtle px-2">Data Flow</span>
+</div>
+</div>
+<!-- Beam Master Node -->
+<div class="bg-surface border-2 border-secondary rounded-lg p-6 w-full md:w-1/3 text-center shadow-sm relative z-10">
+<div class="w-12 h-12 bg-secondary-container rounded-full mx-auto mb-4 flex items-center justify-center border border-secondary">
+<span class="material-symbols-outlined text-on-secondary-container">architecture</span>
+</div>
+<h3 class="font-label-sm text-label-sm font-bold text-primary mb-2">Beam Master</h3>
+<p class="font-code-technical text-code-technical text-on-surface-variant text-xs">SFD, BMD, Deflection</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-gutter max-w-max-width mx-auto text-center">
+<div class="bg-surface-container border border-technical rounded-xl p-12 relative overflow-hidden">
+<div class="absolute inset-0 grid-bg opacity-30"></div>
+<div class="relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Ready to visualize your structures?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-xl mx-auto">
+                        Access Beam Master along with our full suite of engineering tools. Start your free trial today.
+                    </p>
+<a class="bg-primary text-on-primary px-8 py-4 rounded font-label-sm text-label-sm hover:bg-on-primary-fixed transition-colors shadow-sm inline-flex items-center gap-2" href="https://app.askonlinetutor.com/beam">
+                        Open Beam Master Now
+                        <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container border-t border-technical w-full py-12 px-gutter max-w-max-width mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="col-span-2 md:col-span-1">
+<a class="text-headline-sm font-headline-md font-bold text-primary block mb-4" href="#">ASK ONLINE TUTOR</a>
+<p class="text-label-sm font-label-sm text-on-surface-variant">© 2024 Ask Online Tutor. Precision-engineered solutions for the next generation.</p>
+</div>
+<div>
+<h4 class="text-label-sm font-label-sm font-bold text-primary mb-4">Products</h4>
+<ul class="space-y-2">
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Beam Master</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Section Master</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Truss Solver</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-label-sm font-label-sm font-bold text-primary mb-4">Resources</h4>
+<ul class="space-y-2">
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Documentation</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Tutorials</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-label-sm font-label-sm font-bold text-primary mb-4">Company</h4>
+<ul class="space-y-2">
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Legal</a></li>
+</ul>
+</div>
+</footer>
+</body></html>

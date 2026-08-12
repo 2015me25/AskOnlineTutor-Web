@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Engineering Knowledge Base | AskOnlineTutor Engineering</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#0058be",
+                    "on-background": "#191c1e",
+                    "on-surface-variant": "#45464d",
+                    "error": "#ba1a1a",
+                    "warning-caution": "#F59E0B",
+                    "tertiary": "#000000",
+                    "success-graph": "#10B981",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-surface": "#191c1e",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "on-primary-container": "#7c839b",
+                    "on-tertiary-container": "#98805d",
+                    "surface-dim": "#d8dadc",
+                    "border-technical": "#E2E8F0",
+                    "on-tertiary-fixed": "#271901",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#001a42",
+                    "secondary-fixed": "#d8e2ff",
+                    "surface-variant": "#e0e3e5",
+                    "surface-container-low": "#f2f4f6",
+                    "surface-subtle": "#F1F5F9",
+                    "outline-variant": "#c6c6cd",
+                    "background": "#f7f9fb",
+                    "surface": "#f7f9fb",
+                    "secondary-container": "#2170e4",
+                    "primary-fixed": "#dae2fd",
+                    "tertiary-container": "#271901",
+                    "on-secondary": "#ffffff",
+                    "primary": "#000000",
+                    "inverse-on-surface": "#eff1f3",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-primary": "#ffffff",
+                    "outline": "#76777d",
+                    "surface-tint": "#565e74",
+                    "on-secondary-container": "#fefcff",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#fcdeb5",
+                    "on-tertiary-fixed-variant": "#574425",
+                    "on-secondary-fixed-variant": "#004395",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#131b2e",
+                    "inverse-primary": "#bec6e0",
+                    "surface-container": "#eceef0",
+                    "inverse-surface": "#2d3133",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#dec29a",
+                    "surface-container-high": "#e6e8ea",
+                    "on-primary-fixed": "#131b2e",
+                    "surface-bright": "#f7f9fb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "unit": "4px",
+                    "max-width": "1280px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "code-technical": [
+                            "Geist"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "headline-xl": [
+                            "Geist"
+                    ],
+                    "label-sm": [
+                            "Geist"
+                    ],
+                    "headline-md": [
+                            "Geist"
+                    ],
+                    "headline-lg": [
+                            "Geist"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "code-technical": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-xl": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-sm": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.02em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .blueprint-grid {
+            background-image: linear-gradient(#F1F5F9 1px, transparent 1px), linear-gradient(90deg, #F1F5F9 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest sticky top-0 w-full border-b border-border-technical z-50">
+<div class="flex justify-between items-center h-16 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">AskOnlineTutor Engineering</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 cursor-pointer active:opacity-80 font-body-md text-body-md" href="#">Products</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 cursor-pointer active:opacity-80 font-body-md text-body-md" href="#">Solutions</a>
+<a class="text-secondary font-semibold border-b-2 border-secondary transition-colors duration-200 cursor-pointer active:opacity-80 font-body-md text-body-md" href="#">Resources</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 cursor-pointer active:opacity-80 font-body-md text-body-md" href="#">Pricing</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 cursor-pointer active:opacity-80 font-body-md text-body-md" href="#">About</a>
+</div>
+<div class="flex space-x-4">
+<button class="font-body-md text-body-md text-primary font-medium py-2 px-4 rounded-DEFAULT border border-transparent hover:bg-surface-container-low transition-colors duration-200">Sign In</button>
+<button class="font-body-md text-body-md bg-secondary text-on-secondary py-2 px-4 rounded-DEFAULT font-medium hover:bg-secondary-container transition-colors duration-200 shadow-sm">Get Started</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow blueprint-grid pt-12 pb-24 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-max-width mx-auto">
+<!-- Header Section -->
+<header class="text-center mb-16 max-w-3xl mx-auto">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-6">Engineering Knowledge Base</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">Master structural analysis with our comprehensive guides, interactive calculators, and technical tutorials.</p>
+<!-- Search Bar -->
+<div class="relative max-w-2xl mx-auto group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 transform -translate-y-1/2 text-on-surface-variant group-focus-within:text-secondary transition-colors duration-200">search</span>
+<input class="w-full pl-12 pr-4 py-4 rounded-DEFAULT border border-border-technical bg-surface-container-lowest focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary font-body-md text-body-md text-on-background shadow-[0_2px_4px_rgba(15,23,42,0.05)] transition-all duration-200" placeholder="Search for guides, calculators, or formulas..." type="text"/>
+</div>
+</header>
+<!-- Section 1: Featured Calculators -->
+<section class="mb-20">
+<div class="flex items-center justify-between border-b border-border-technical pb-4 mb-8">
+<h2 class="font-headline-lg text-headline-lg text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">calculate</span>
+                        Featured Calculators
+                    </h2>
+<a class="text-secondary hover:text-secondary-container font-label-sm text-label-sm flex items-center gap-1 transition-colors duration-200" href="#">
+                        View All <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Calculator Card 1 -->
+<div class="bg-surface-container-lowest border border-border-technical rounded-DEFAULT hover:shadow-[0_4px_12px_rgba(15,23,42,0.08)] transition-all duration-300 group flex flex-col h-full cursor-pointer relative overflow-hidden">
+<div class="h-32 bg-surface-subtle flex items-center justify-center border-b border-border-technical relative">
+<!-- Technical SVG Representation -->
+<svg class="w-24 h-12 text-secondary group-hover:scale-105 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 100 50">
+<line class="stroke-primary" stroke-width="3" x1="10" x2="90" y1="25" y2="25"></line>
+<path class="stroke-secondary stroke-dasharray-4" d="M10 25 Q 50 45 90 25" stroke-dasharray="4"></path>
+<polygon fill="currentColor" points="10,25 5,35 15,35" stroke="none"></polygon>
+<polygon fill="none" points="90,25 85,35 95,35"></polygon>
+<circle cx="90" cy="37" fill="currentColor" r="2" stroke="none"></circle>
+</svg>
+<div class="absolute inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-secondary transition-colors duration-200">Beam Deflection</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow line-clamp-2">Calculate deflection, slope, and reactions for various load cases on beams.</p>
+</div>
+</div>
+<!-- Calculator Card 2 -->
+<div class="bg-surface-container-lowest border border-border-technical rounded-DEFAULT hover:shadow-[0_4px_12px_rgba(15,23,42,0.08)] transition-all duration-300 group flex flex-col h-full cursor-pointer relative overflow-hidden">
+<div class="h-32 bg-surface-subtle flex items-center justify-center border-b border-border-technical relative">
+<svg class="w-24 h-16 text-secondary group-hover:scale-105 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 100 60">
+<line class="stroke-primary" stroke-width="3" x1="10" x2="90" y1="40" y2="40"></line>
+<polygon fill="currentColor" points="10,40 5,50 15,50" stroke="none"></polygon>
+<polygon fill="none" points="90,40 85,50 95,50"></polygon>
+<circle cx="90" cy="52" fill="currentColor" r="2" stroke="none"></circle>
+<!-- Uniform Load -->
+<line stroke-width="1" x1="20" x2="80" y1="20" y2="20"></line>
+<line marker-end="url(#arrow)" x1="20" x2="20" y1="20" y2="40"></line>
+<line marker-end="url(#arrow)" x1="40" x2="40" y1="20" y2="40"></line>
+<line marker-end="url(#arrow)" x1="60" x2="60" y1="20" y2="40"></line>
+<line marker-end="url(#arrow)" x1="80" x2="80" y1="20" y2="40"></line>
+</svg>
+<div class="absolute inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-secondary transition-colors duration-200">Simply Supported Beam</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow line-clamp-2">Determine shear forces, bending moments, and reactions for simple beams.</p>
+</div>
+</div>
+<!-- Calculator Card 3 -->
+<div class="bg-surface-container-lowest border border-border-technical rounded-DEFAULT hover:shadow-[0_4px_12px_rgba(15,23,42,0.08)] transition-all duration-300 group flex flex-col h-full cursor-pointer relative overflow-hidden">
+<div class="h-32 bg-surface-subtle flex items-center justify-center border-b border-border-technical relative">
+<svg class="w-24 h-24 text-secondary group-hover:scale-105 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 100 100">
+<!-- I-Beam Cross Section -->
+<path class="stroke-primary" d="M20,20 L80,20 L80,30 L55,30 L55,70 L80,70 L80,80 L20,80 L20,70 L45,70 L45,30 L20,30 Z" fill="#e2e8f0" stroke-width="2"></path>
+<!-- Centroid Axes -->
+<line class="stroke-secondary" stroke-dasharray="4,2" stroke-width="1" x1="10" x2="90" y1="50" y2="50"></line>
+<line class="stroke-secondary" stroke-dasharray="4,2" stroke-width="1" x1="50" x2="50" y1="10" y2="90"></line>
+<circle cx="50" cy="50" fill="currentColor" r="3" stroke="none"></circle>
+</svg>
+<div class="absolute inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-secondary transition-colors duration-200">Moment of Inertia</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow line-clamp-2">Calculate area properties including centroid, Ixx, Iyy for standard sections.</p>
+</div>
+</div>
+<!-- Calculator Card 4 -->
+<div class="bg-surface-container-lowest border border-border-technical rounded-DEFAULT hover:shadow-[0_4px_12px_rgba(15,23,42,0.08)] transition-all duration-300 group flex flex-col h-full cursor-pointer relative overflow-hidden">
+<div class="h-32 bg-surface-subtle flex items-center justify-center border-b border-border-technical relative">
+<svg class="w-32 h-20 text-secondary group-hover:scale-105 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 120 60">
+<!-- Simple Truss -->
+<polygon class="stroke-primary" points="10,50 60,10 110,50" stroke-linejoin="round" stroke-width="2"></polygon>
+<line class="stroke-primary" stroke-width="2" x1="60" x2="60" y1="10" y2="50"></line>
+<line class="stroke-primary" stroke-width="2" x1="10" x2="110" y1="50" y2="50"></line>
+<!-- Nodes -->
+<circle class="stroke-secondary" cx="10" cy="50" fill="white" r="3"></circle>
+<circle class="stroke-secondary" cx="60" cy="10" fill="white" r="3"></circle>
+<circle class="stroke-secondary" cx="110" cy="50" fill="white" r="3"></circle>
+<circle class="stroke-secondary" cx="60" cy="50" fill="white" r="3"></circle>
+<!-- Support -->
+<polygon fill="currentColor" points="10,50 5,60 15,60" stroke="none"></polygon>
+</svg>
+<div class="absolute inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-secondary transition-colors duration-200">Truss Analysis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow line-clamp-2">Solve 2D trusses for member forces, support reactions, and displacements.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Engineering Guides & Section 3: Tutorials (Bento Grid Layout) -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter mb-20">
+<!-- Engineering Guides (Takes up 2 columns) -->
+<section class="lg:col-span-2">
+<div class="flex items-center justify-between border-b border-border-technical pb-4 mb-8">
+<h2 class="font-headline-lg text-headline-lg text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+                            Engineering Guides
+                        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Guide Card 1 -->
+<article class="bg-surface-container-lowest border border-border-technical rounded-DEFAULT hover:shadow-[0_2px_8px_rgba(15,23,42,0.06)] transition-all duration-300 flex flex-col">
+<div class="p-6 border-b border-border-technical">
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-surface-subtle text-primary font-label-sm text-[12px] px-2 py-1 rounded-sm border border-border-technical tracking-wider uppercase">Statics</span>
+<span class="text-on-surface-variant font-code-technical text-code-technical text-[12px]">10 min read</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 leading-snug">How to Draw a Shear Force Diagram</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4">A comprehensive step-by-step methodology for constructing accurate SFDs for various beam configurations.</p>
+</div>
+<div class="px-6 py-4 bg-surface-bright flex justify-between items-center mt-auto rounded-b-DEFAULT">
+<a class="text-secondary font-medium font-body-md text-body-md hover:underline decoration-1 underline-offset-4 flex items-center gap-1 group" href="#">
+                                    Read Guide <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Guide Card 2 -->
+<article class="bg-surface-container-lowest border border-border-technical rounded-DEFAULT hover:shadow-[0_2px_8px_rgba(15,23,42,0.06)] transition-all duration-300 flex flex-col">
+<div class="p-6 border-b border-border-technical">
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-surface-subtle text-primary font-label-sm text-[12px] px-2 py-1 rounded-sm border border-border-technical tracking-wider uppercase">Trusses</span>
+<span class="text-on-surface-variant font-code-technical text-code-technical text-[12px]">15 min read</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 leading-snug">Method of Joints vs. Method of Sections</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4">An analytical comparison to determine the most efficient approach for solving complex planar trusses.</p>
+</div>
+<div class="px-6 py-4 bg-surface-bright flex justify-between items-center mt-auto rounded-b-DEFAULT">
+<a class="text-secondary font-medium font-body-md text-body-md hover:underline decoration-1 underline-offset-4 flex items-center gap-1 group" href="#">
+                                    Read Guide <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Guide Card 3 -->
+<article class="bg-surface-container-lowest border border-border-technical rounded-DEFAULT hover:shadow-[0_2px_8px_rgba(15,23,42,0.06)] transition-all duration-300 flex flex-col">
+<div class="p-6 border-b border-border-technical">
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-surface-subtle text-primary font-label-sm text-[12px] px-2 py-1 rounded-sm border border-border-technical tracking-wider uppercase">Mechanics</span>
+<span class="text-on-surface-variant font-code-technical text-code-technical text-[12px]">12 min read</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 leading-snug">Understanding Beam Deflection Formulas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4">Derivation and practical application of standard deflection formulas for common loading conditions.</p>
+</div>
+<div class="px-6 py-4 bg-surface-bright flex justify-between items-center mt-auto rounded-b-DEFAULT">
+<a class="text-secondary font-medium font-body-md text-body-md hover:underline decoration-1 underline-offset-4 flex items-center gap-1 group" href="#">
+                                    Read Guide <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Guide Card 4 -->
+<article class="bg-surface-container-lowest border border-border-technical rounded-DEFAULT hover:shadow-[0_2px_8px_rgba(15,23,42,0.06)] transition-all duration-300 flex flex-col">
+<div class="p-6 border-b border-border-technical">
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-surface-subtle text-primary font-label-sm text-[12px] px-2 py-1 rounded-sm border border-border-technical tracking-wider uppercase">Materials</span>
+<span class="text-on-surface-variant font-code-technical text-code-technical text-[12px]">8 min read</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 leading-snug">Material Properties in Structural Design</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4">A reference guide to Young's Modulus, Yield Strength, and other critical parameters for structural steel and concrete.</p>
+</div>
+<div class="px-6 py-4 bg-surface-bright flex justify-between items-center mt-auto rounded-b-DEFAULT">
+<a class="text-secondary font-medium font-body-md text-body-md hover:underline decoration-1 underline-offset-4 flex items-center gap-1 group" href="#">
+                                    Read Guide <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Tutorials (Takes up 1 column) -->
+<section class="lg:col-span-1">
+<div class="flex items-center justify-between border-b border-border-technical pb-4 mb-8">
+<h2 class="font-headline-lg text-headline-lg text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+                            Tutorials
+                        </h2>
+</div>
+<div class="bg-surface-container-lowest border border-border-technical rounded-DEFAULT overflow-hidden">
+<!-- List Item 1 -->
+<a class="flex p-4 border-b border-border-technical hover:bg-surface-subtle transition-colors duration-200 group" href="#">
+<div class="flex-shrink-0 mr-4 mt-1">
+<span class="material-symbols-outlined text-secondary group-hover:scale-110 transition-transform">smart_display</span>
+</div>
+<div>
+<h4 class="font-headline-md text-[18px] leading-tight text-primary mb-1 group-hover:text-secondary transition-colors">Getting Started with Beam Master</h4>
+<p class="font-body-md text-[14px] text-on-surface-variant">Video tutorial • 5:23</p>
+</div>
+</a>
+<!-- List Item 2 -->
+<a class="flex p-4 border-b border-border-technical hover:bg-surface-subtle transition-colors duration-200 group" href="#">
+<div class="flex-shrink-0 mr-4 mt-1">
+<span class="material-symbols-outlined text-secondary group-hover:scale-110 transition-transform">school</span>
+</div>
+<div>
+<h4 class="font-headline-md text-[18px] leading-tight text-primary mb-1 group-hover:text-secondary transition-colors">Solving Complex Frames Step-by-Step</h4>
+<p class="font-body-md text-[14px] text-on-surface-variant">Interactive course • 3 modules</p>
+</div>
+</a>
+<!-- List Item 3 -->
+<a class="flex p-4 border-b border-border-technical hover:bg-surface-subtle transition-colors duration-200 group" href="#">
+<div class="flex-shrink-0 mr-4 mt-1">
+<span class="material-symbols-outlined text-secondary group-hover:scale-110 transition-transform">picture_as_pdf</span>
+</div>
+<div>
+<h4 class="font-headline-md text-[18px] leading-tight text-primary mb-1 group-hover:text-secondary transition-colors">Exporting Professional Reports</h4>
+<p class="font-body-md text-[14px] text-on-surface-variant">Documentation guide</p>
+</div>
+</a>
+<div class="p-4 bg-surface-bright flex justify-center">
+<button class="font-body-md text-body-md text-primary font-medium py-2 px-6 rounded-DEFAULT border border-border-technical hover:bg-surface-container-low transition-colors duration-200 w-full">
+                                Browse All Tutorials
+                            </button>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low w-full py-12 border-t border-border-technical mt-auto">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="col-span-2 md:col-span-1 mb-8 md:mb-0">
+<div class="font-headline-md text-headline-md font-bold text-primary mb-4">AskOnlineTutor Engineering</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Engineering standard precision.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-2">Products</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Beam Calculator</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Truss Solver</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Section Properties</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-2">Resources</h4>
+<a class="font-body-md text-body-md text-primary font-bold" href="#">Knowledge Base</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Formulas</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Tutorials</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-2">Company</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">About Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Contact</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-1 underline-offset-4 transition-all duration-200" href="#">Legal</a>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto mt-12 pt-8 border-t border-border-technical">
+<p class="font-body-md text-body-md text-on-surface-variant text-sm text-center">© 2024 AskOnlineTutor Engineering. All rights reserved. Engineering standard precision.</p>
+</div>
+</footer>
+</body></html>

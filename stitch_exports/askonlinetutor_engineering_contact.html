@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - AskOnlineTutor Engineering</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#7c839b",
+                        "on-background": "#191c1e",
+                        "tertiary-container": "#271901",
+                        "on-secondary-container": "#fefcff",
+                        "on-tertiary-fixed": "#271901",
+                        "background": "#f7f9fb",
+                        "tertiary-fixed": "#fcdeb5",
+                        "surface-dim": "#d8dadc",
+                        "on-tertiary-container": "#98805d",
+                        "on-surface-variant": "#45464d",
+                        "tertiary-fixed-dim": "#dec29a",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#131b2e",
+                        "on-surface": "#191c1e",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "primary-fixed-dim": "#bec6e0",
+                        "tertiary": "#000000",
+                        "secondary-fixed": "#d8e2ff",
+                        "outline": "#76777d",
+                        "on-secondary-fixed-variant": "#004395",
+                        "surface-bright": "#f7f9fb",
+                        "secondary-container": "#2170e4",
+                        "on-primary-fixed": "#131b2e",
+                        "primary": "#000000",
+                        "outline-variant": "#c6c6cd",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e0e3e5",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-tertiary-fixed-variant": "#574425",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#0058be",
+                        "warning-caution": "#F59E0B",
+                        "inverse-primary": "#bec6e0",
+                        "inverse-surface": "#2d3133",
+                        "primary-fixed": "#dae2fd",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-container-high": "#e6e8ea",
+                        "surface": "#f7f9fb",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f2f4f6",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#001a42",
+                        "success-graph": "#10B981",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "surface-container": "#eceef0",
+                        "surface-tint": "#565e74",
+                        "on-primary": "#ffffff",
+                        "border-technical": "#E2E8F0",
+                        "surface-subtle": "#F1F5F9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "max-width": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-md": ["Geist"],
+                        "headline-lg": ["Geist"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Geist"],
+                        "headline-xl": ["Geist"],
+                        "code-technical": ["Geist"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "code-technical": ["14px", { "lineHeight": "20px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .grid-bg {
+            background-image: linear-gradient(to right, #E2E8F0 1px, transparent 1px),
+                              linear-gradient(to bottom, #E2E8F0 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col relative overflow-x-hidden">
+<!-- TopNavBar (Shared Component) -->
+<nav class="bg-surface dark:bg-on-background border-b border-outline-variant dark:border-outline docked full-width top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-max-width mx-auto h-16">
+<div class="font-headline-md text-headline-md font-bold text-on-surface dark:text-surface-bright tracking-tight">
+                AskOnlineTutor Engineering
+            </div>
+<div class="hidden md:flex space-x-8">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary hover:bg-surface-subtle dark:hover:bg-primary-container transition-colors py-2 px-3 rounded" href="#">Products</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary hover:bg-surface-subtle dark:hover:bg-primary-container transition-colors py-2 px-3 rounded" href="#">Solutions</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary hover:bg-surface-subtle dark:hover:bg-primary-container transition-colors py-2 px-3 rounded" href="#">Resources</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary hover:bg-surface-subtle dark:hover:bg-primary-container transition-colors py-2 px-3 rounded" href="#">Pricing</a>
+<a class="text-secondary dark:text-secondary-fixed border-b-2 border-secondary pb-1 opacity-80 transition-all duration-200 py-2 px-3" href="#">About</a>
+</div>
+<div class="hidden md:flex items-center space-x-4">
+<button class="bg-secondary text-on-secondary px-4 py-2 rounded font-label-sm hover:bg-secondary-container hover:text-on-secondary-container transition-colors">Sign In</button>
+</div>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow w-full max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24 relative">
+<!-- Background Grid Element -->
+<div class="absolute inset-0 grid-bg opacity-40 -z-10 pointer-events-none mix-blend-multiply"></div>
+<!-- Hero Section -->
+<header class="mb-16 border-b border-border-technical pb-8">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-6">Get in Touch with<br/><span class="text-secondary">Engineering Support</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl border-l-2 border-secondary pl-4">
+                Our team of structural engineers and developers is here to help with technical inquiries, enterprise solutions, and academic partnerships.
+            </p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Contact Form (Left Column - 7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest border border-border-technical p-8 shadow-sm">
+<div class="mb-6 pb-2 border-b border-border-technical">
+<h2 class="font-headline-md text-headline-md text-on-primary-fixed">Submit an Inquiry</h2>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2 uppercase tracking-widest" for="name">Full Name</label>
+<input class="w-full bg-surface-subtle border border-border-technical rounded px-4 py-3 font-body-md text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" id="name" name="name" placeholder="Jane Doe" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2 uppercase tracking-widest" for="email">Professional/Academic Email</label>
+<input class="w-full bg-surface-subtle border border-border-technical rounded px-4 py-3 font-body-md text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" id="email" name="email" placeholder="jane@university.edu" type="email"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2 uppercase tracking-widest" for="subject">Inquiry Type</label>
+<select class="w-full bg-surface-subtle border border-border-technical rounded px-4 py-3 font-body-md text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all appearance-none cursor-pointer" id="subject" name="subject">
+<option value="tech_support">Technical Support</option>
+<option value="sales">Sales Inquiry</option>
+<option value="academic">Academic Partnership</option>
+<option value="media">Media &amp; Press</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2 uppercase tracking-widest" for="message">Message Details</label>
+<textarea class="w-full bg-surface-subtle border border-border-technical rounded px-4 py-3 font-body-md text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all resize-none" id="message" name="message" placeholder="Provide details regarding your technical issue or partnership proposal..." rows="5"></textarea>
+</div>
+<div class="pt-4 border-t border-border-technical flex justify-end">
+<button class="bg-secondary text-on-secondary px-8 py-3 rounded font-label-sm text-label-sm hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-2" type="submit">
+<span>Submit Request</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Direct Contact (Right Column - 5 cols) -->
+<div class="lg:col-span-5 space-y-6">
+<!-- Contact Methods Cards -->
+<div class="bg-surface-container-low border border-border-technical p-6">
+<div class="flex items-start gap-4">
+<div class="bg-surface-container-highest p-3 rounded">
+<span class="material-symbols-outlined text-secondary">engineering</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Technical Support</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Direct access for Pro and Suite users. Typical response time &lt; 2 hours.</p>
+<a class="inline-flex items-center gap-1 mt-3 text-secondary font-label-sm hover:underline decoration-secondary" href="#">support@askonlinetutor.com <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low border border-border-technical p-6">
+<div class="flex items-start gap-4">
+<div class="bg-surface-container-highest p-3 rounded">
+<span class="material-symbols-outlined text-secondary">business_center</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Enterprise Sales</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Custom licensing for engineering firms and large-scale deployments.</p>
+<a class="inline-flex items-center gap-1 mt-3 text-secondary font-label-sm hover:underline decoration-secondary" href="#">sales@askonlinetutor.com <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low border border-border-technical p-6">
+<div class="flex items-start gap-4">
+<div class="bg-surface-container-highest p-3 rounded">
+<span class="material-symbols-outlined text-secondary">school</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Academic Partnerships</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Solutions for universities, educators, and research institutions.</p>
+<a class="inline-flex items-center gap-1 mt-3 text-secondary font-label-sm hover:underline decoration-secondary" href="#">edu@askonlinetutor.com <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+</div>
+</div>
+</div>
+<!-- Office Location -->
+<div class="mt-8 pt-8 border-t border-border-technical relative overflow-hidden">
+<h3 class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-4">Engineering Hub</h3>
+<address class="not-italic font-body-md text-body-md text-on-surface">
+<strong>AskOnlineTutor Engineering LLC</strong><br/>
+                        1024 Tech District Blvd, Suite 400<br/>
+                        Seattle, WA 98109<br/>
+                        United States
+                    </address>
+<!-- Decorative Equation Watermark -->
+<div class="absolute bottom-0 right-0 opacity-10 pointer-events-none select-none p-4 font-code-technical text-2xl text-on-surface-variant transform rotate-[-5deg]">
+                        ΣF<sub>y</sub> = 0 <br/>
+                        ΣM<sub>A</sub> = 0
+                    </div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-lowest dark:bg-on-background border-t border-outline-variant dark:border-outline full-width bottom-0 mt-auto">
+<div class="w-full px-margin-desktop py-12 max-w-max-width mx-auto grid grid-cols-2 md:grid-cols-4 gap-gutter font-label-sm text-label-sm text-on-surface dark:text-surface-bright transition-all duration-150">
+<div>
+<div class="font-headline-sm text-headline-sm font-semibold text-secondary mb-4">AskOnlineTutor</div>
+<p class="text-on-surface-variant dark:text-on-surface-variant">© 2024 AskOnlineTutor Engineering. All rights reserved. Engineering Standards Compliant.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4">Navigation</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface hover:underline decoration-secondary" href="#">Products</a></li>
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface hover:underline decoration-secondary" href="#">Solutions</a></li>
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface hover:underline decoration-secondary" href="#">Resources</a></li>
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface hover:underline decoration-secondary" href="#">Pricing</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Company</h4>
+<ul class="space-y-2">
+<li><a class="text-secondary font-bold hover:underline decoration-secondary" href="#">About</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface hover:underline decoration-secondary" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface hover:underline decoration-secondary" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface hover:underline decoration-secondary" href="#">Security</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>
