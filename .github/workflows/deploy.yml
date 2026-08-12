@@ -1,0 +1,65 @@
+name: Deploy AskOnlineTutor-Web to Hostinger
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy Next.js to Hostinger
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🟢 Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 📦 Install Dependencies
+        run: npm ci
+
+      - name: 🔨 Build Next.js (Static Export)
+        run: npm run build
+        env:
+          NODE_ENV: production
+
+      - name: 📄 Create .htaccess for Apache routing
+        run: |
+          cat > out/.htaccess << 'EOF'
+          Options -MultiViews
+          RewriteEngine On
+          RewriteBase /
+
+          # Serve static files directly
+          RewriteCond %{REQUEST_FILENAME} -f
+          RewriteRule ^ - [L]
+
+          # Handle Next.js static export routes
+          RewriteCond %{REQUEST_FILENAME} !-f
+          RewriteCond %{REQUEST_FILENAME} !-d
+          RewriteCond %{REQUEST_FILENAME}.html -f
+          RewriteRule ^(.+)$ $1.html [L]
+
+          # Cache static assets
+          <FilesMatch "\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot)$">
+            Header set Cache-Control "max-age=31536000, public"
+          </FilesMatch>
+          EOF
+
+      - name: 🚀 Deploy to Hostinger via FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.HOSTINGER_FTP_SERVER }}
+          username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
+          password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+          server-dir: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
+          local-dir: ./out/
+          protocol: ftps
+          dangerous-clean-slate: false
