@@ -27,8 +27,10 @@ yarn-error.log*
 .env*.local
 .env
 
-# deploy scripts (contain credentials - keep out of git)
-/deploy.mjs
+# deploy secrets (local only - repo is public!)
+/deploy.env
+
+# stale deploy scripts (contain old credentials - keep out of git)
 /deploy_v2.mjs
 /deploy_clean.mjs
 /check_hostinger_apps.mjs
