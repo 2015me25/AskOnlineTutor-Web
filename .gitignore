@@ -27,6 +27,19 @@ yarn-error.log*
 .env*.local
 .env
 
+# deploy scripts (contain credentials - keep out of git)
+/deploy.mjs
+/deploy_v2.mjs
+/deploy_clean.mjs
+/check_hostinger_apps.mjs
+/diagnose_ftp.mjs
+/disable_htaccess.mjs
+/find_ftp_host.mjs
+/fix_permissions.mjs
+/ftp_deploy.mjs
+/sftp_deploy.mjs
+/upload_htaccess.mjs
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
