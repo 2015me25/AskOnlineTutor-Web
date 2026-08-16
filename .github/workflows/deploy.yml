@@ -37,6 +37,10 @@ jobs:
           RewriteEngine On
           RewriteBase /
 
+          # Legacy double-path URL (/beam/beam) → canonical Beam Master app.
+          # Fires before the /beam/ subdirectory .htaccess can 404 these paths.
+          RewriteRule ^beam/beam(/.*)?$ /beam/ [NC,R=301,L]
+
           # Serve static files directly
           RewriteCond %{REQUEST_FILENAME} -f
           RewriteRule ^ - [L]
